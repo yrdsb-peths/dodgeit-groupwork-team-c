@@ -1,5 +1,4 @@
 #Greenfoot project file
-class.gameOver.image=igloo.png
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -22,7 +21,7 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=70
-target1.name=gameOver
+target1.name=BearEnemy
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=120
