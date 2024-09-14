@@ -20,8 +20,5 @@ public class MyWorld extends World
         
         Hero hero = new Hero();
         addObject(hero, 100, 100); 
-
-        Bear bear = new Bear ();
-        addObject(bear, 600, 100);
     }
 }
