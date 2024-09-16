@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BearEnemy extends Actor
 {
     /**
-     * Act - do whatever the BearEnemy wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     *This makes the bear move from the right side of the screen to the left side
+     * When it gets to the right side, it calls the resetBear function
      */
     public void act()
     {
@@ -22,6 +22,9 @@ public class BearEnemy extends Actor
         }
     }
     
+    /* 
+    * To choose the bear's location, it chooses a random number to set the location either near the top or bottom
+    */ 
     public void resetBear()
     {
         int num = Greenfoot.getRandomNumber(2);
