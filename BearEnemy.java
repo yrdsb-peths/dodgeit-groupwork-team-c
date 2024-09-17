@@ -36,6 +36,12 @@ public class BearEnemy extends Actor
                 resetBear();
             }
         }
+        
+        if(isTouching(Hero.class)){
+            gameOver gameOver = new gameOver();
+            getWorld().addObject(gameOver, 300, 200);
+            getWorld().removeObject(this);
+        }
     }
     
     public void resetBear()
