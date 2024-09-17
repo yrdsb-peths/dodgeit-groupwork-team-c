@@ -9,13 +9,32 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BearEnemy extends Actor
 {
     //This is the code that allows the Bear Enemy to move
+    private boolean waiting;
+    private int waitingTimer;
+    
+    public BearEnemy()
+    {
+        waitingTimer = 120; 
+        waiting = true;
+    }
     public void act()
     {
-        move(-3);
-        
-        if(getX() <= 0)
+        if(waiting)
         {
-            resetBear();
+            waitingTimer--;
+            if(waitingTimer== 0 )
+            {
+                waiting = false;
+                Hero p = getWorld().getObjects(Hero.class).get(0);
+            }
+        }
+        else
+        {
+            move(-8);
+            if(isAtEdge())
+            {
+                resetBear();
+            }
         }
     }
     
