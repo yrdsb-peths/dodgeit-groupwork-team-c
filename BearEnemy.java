@@ -19,9 +19,12 @@ public class BearEnemy extends Actor
         }
     }
     
+    
     public void resetBear()
     {
         int num = Greenfoot.getRandomNumber(2);
+        MyWorld world = (MyWorld) getWorld();
+        world.increaseScore();
         if(num == 0)
         {
             setLocation(600,100);

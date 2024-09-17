@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    public int score = 0;
+    Label scoreLabel;
+    BearEnemy bear = new BearEnemy ();
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -21,7 +23,23 @@ public class MyWorld extends World
         Hero hero = new Hero();
         addObject(hero, 100, 100); 
 
-        BearEnemy bear = new BearEnemy ();
         addObject(bear, 600, 100);
+        
+        // create label 
+        scoreLabel = new Label(0, 80);
+        addObject(scoreLabel, 50, 50);
     }
+    
+    /**
+     * Increase score 
+     */
+    public void increaseScore()
+    {
+        if(bear.getX() == 0)
+        {
+            score++;
+            scoreLabel.setValue(score);
+        }
+    }
+    
 }

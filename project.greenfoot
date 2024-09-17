@@ -52,13 +52,4 @@ target3.x=0
 target3.y=0
 target4.height=70
 target4.name=MyWorld
-target4.showInterface=false
-target4.type=ClassTarget
-target4.width=120
-target4.x=0
-target4.y=0
-version=3.1.0
-width=812
-world.lastInstantiated=MyWorld
-xPosition=613
-yPosition=83
+targe
