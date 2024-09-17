@@ -9,6 +9,6 @@ public class gameOver extends Actor
      */
     public void act()
     {
-        setImage(new GreenfootImage("bigmoth.png"));
+        
     }
 }
